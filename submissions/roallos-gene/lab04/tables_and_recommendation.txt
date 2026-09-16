@@ -1,0 +1,172 @@
+================================================================================
+LAB 04 – HOW ACCURATE IS GOOD ENOUGH?
+Approximating y = L * sin(theta)  with L = 20 m
+================================================================================
+
+DELIVERABLE 1: NUMERICAL TABLES
+--------------------------------------------------------------------------------
+
+
+----- Maclaurin  |  N = 1 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.34906585     0.00001772     0.00507714
+           2   0.69798993    0.69813170     0.00014177     0.02031072
+           5   1.74311485    1.74532925     0.00221440     0.12703678
+          10   3.47296355    3.49065850     0.01769495     0.50950580
+          15   5.17638090    5.23598776     0.05960685     1.15151599
+          20   6.84040287    6.98131701     0.14091414     2.06002693
+          30  10.00000000   10.47197551     0.47197551     4.71975512
+
+----- Maclaurin  |  N = 2 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.34904813     0.00000000     0.00000008
+           2   0.69798993    0.69798993     0.00000001     0.00000124
+           5   1.74311485    1.74311401     0.00000084     0.00004838
+          10   3.47296355    3.47293658     0.00002697     0.00077664
+          15   5.17638090    5.17617627     0.00020464     0.00395328
+          20   6.84040287    6.83954162     0.00086124     0.01259054
+          30  10.00000000    9.99348359     0.00651641     0.06516412
+
+----- Maclaurin  |  N = 3 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.34904813     0.00000000     0.00000000
+           2   0.69798993    0.69798993     0.00000000     0.00000000
+           5   1.74311485    1.74311486     0.00000000     0.00000001
+          10   3.47296355    3.47296357     0.00000002     0.00000056
+          15   5.17638090    5.17638124     0.00000033     0.00000646
+          20   6.84040287    6.84040537     0.00000250     0.00003657
+          30  10.00000000   10.00004265     0.00004265     0.00042652
+
+----- Maclaurin  |  N = 4 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.34904813     0.00000000     0.00000000
+           2   0.69798993    0.69798993     0.00000000     0.00000000
+           5   1.74311485    1.74311485     0.00000000     0.00000000
+          10   3.47296355    3.47296355     0.00000000     0.00000000
+          15   5.17638090    5.17638090     0.00000000     0.00000001
+          20   6.84040287    6.84040286     0.00000000     0.00000006
+          30  10.00000000    9.99999984     0.00000016     0.00000163
+
+----- Taylor (a=10°)  |  N = 1 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    3.47296355     3.12391542   894.98128405
+           2   0.69798993    3.47296355     2.77497362   397.56642380
+           5   1.74311485    3.47296355     1.72984870    99.23893962
+          10   3.47296355    3.47296355     0.00000000     0.00000000
+          15   5.17638090    3.47296355     1.70341735    32.90749620
+          20   6.84040287    3.47296355     3.36743931    49.22866941
+          30  10.00000000    3.47296355     6.52703645    65.27036447
+
+----- Taylor (a=10°)  |  N = 2 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.37909875     0.03005062     8.60930630
+           2   0.69798993    0.72286151     0.02487157     3.56331400
+           5   1.74311485    1.75414977     0.01103492     0.63305751
+          10   3.47296355    3.47296355     0.00000000     0.00000000
+          15   5.17638090    5.19177733     0.01539643     0.29743619
+          20   6.84040287    6.91059111     0.07018824     1.02608349
+          30  10.00000000   10.34821867     0.34821867     3.48218669
+
+----- Taylor (a=10°)  |  N = 3 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.33625278     0.01279535     3.66578328
+           2   0.69798993    0.68900790     0.00898203     1.28684281
+           5   1.74311485    1.74092571     0.00218915     0.12558814
+          10   3.47296355    3.47296355     0.00000000     0.00000000
+          15   5.17638090    5.17855327     0.00217237     0.04196687
+          20   6.84040287    6.85769485     0.01729198     0.25279191
+          30  10.00000000   10.13663363     0.13663363     1.36633630
+
+----- Taylor (a=10°)  |  N = 4 term(s) -----
+ Angle (deg)  Exact y (m)  Approx y (m)  Abs Error (m)  Pct Error (%)
+           1   0.34904813    0.34897579     0.00007234     0.02072462
+           2   0.69798993    0.69794368     0.00004626     0.00662723
+           5   1.74311485    1.74310730     0.00000756     0.00043368
+          10   3.47296355    3.47296355     0.00000000     0.00000000
+          15   5.17638090    5.17637168     0.00000922     0.00017813
+          20   6.84040287    6.84024216     0.00016070     0.00234931
+          30  10.00000000    9.99701213     0.00298787     0.02987869
+
+
+================================================================================
+MINIMUM TERMS REQUIRED FOR < 0.1 % ERROR
+================================================================================
+ Angle (deg)  Maclaurin terms  Taylor terms
+           1                1             4
+           2                1             4
+           5                2             4
+          10                2             1
+          15                2             3
+          20                2             4
+          30                2             4
+
+Critical angle where sin(theta) ≈ theta exceeds 0.1 % error ≈ 4.5°
+
+
+================================================================================
+DELIVERABLE 5: WRITTEN ENGINEERING RECOMMENDATION
+================================================================================
+
+ENGINEERING DECISION – How accurate is good enough?
+
+Requirement: relative error must be strictly less than 0.1 %.
+
+1. Number of terms required (from the numerical search)
+   - Maclaurin series:
+        • 1 term is enough for 1° and 2°
+        • 2 terms are enough for all angles from 5° to 30°
+   - Taylor series centered at 10°:
+        • 1 term is exact at 10°
+        • 3–4 terms are needed for the other angles in the set
+   - Classic small-angle approximation (sin θ ≈ θ) stays under 0.1 % error
+     only up to approximately 4.5°.
+
+2. Percentage error achieved
+   - With only 2 Maclaurin terms the percentage error is already < 0.07 %
+     even at 30°.
+   - With 4 Maclaurin terms the error drops below 0.000002 % at 30°.
+   - The Taylor series is essentially perfect at the expansion point (10°)
+     and still meets the tolerance with 4 terms everywhere in 1°–30°.
+
+3. Convergence behaviour
+   - Both series converge rapidly for the modest angles typical in civil-
+     engineering geometry problems.
+   - Convergence is slower when the evaluation point is far from the
+     expansion point; therefore the expansion point should be chosen close
+     to the region of interest when a series is used.
+
+4. Computational simplicity vs. accuracy tradeoff
+   - The pure Maclaurin series is the simplest to code (only multiplications
+     and a factorial).
+   - A Taylor series about a non-zero point requires one evaluation of
+     sin(a) and cos(a), then the same arithmetic; the extra cost is negligible.
+   - In modern computers the exact library function math.sin is both faster
+     and more accurate than any truncated series we would write ourselves.
+
+5. Valid angle range for the chosen solution
+   - If a pure series implementation is required:
+        • Use the 1-term Maclaurin (sin θ ≈ θ) for θ ≤ 4°.
+        • Use a 2-term Maclaurin series for all angles up to 30°
+          (already satisfies the 0.1 % tolerance).
+        • Alternatively use a 4-term Taylor series centered near the
+          angles of interest.
+   - Outside that range, or whenever a reliable library routine is available,
+     the exact sine function should be preferred.
+
+RECOMMENDATION
+--------------
+For the great majority of civil-engineering calculations involving angles up
+to 30°, the practical and safest choice is to use the exact sine function
+provided by the language library (math.sin).
+
+If a series approximation is required (educational purposes, hand calculation,
+or analytic derivation), then:
+
+  • A 2-term Maclaurin series is already sufficient to meet the 0.1 %
+    tolerance for every angle examined in this laboratory, or
+  • A Taylor series centered close to the angles of interest can be used
+    when even higher local accuracy is desired.
+
+The numerical evidence produced by this program confirms that both series
+converge quickly and that the 0.1 % engineering tolerance is easily satisfied
+with a very modest number of terms.
